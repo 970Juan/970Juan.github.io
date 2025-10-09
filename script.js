@@ -36,3 +36,27 @@ if (menuBtn && modernNav) {
     modernNav.style.display = visible ? 'none' : 'flex';
   });
 }
+
+const modal = document.getElementById("imgModal");
+const modalImg = document.getElementById("modalImage");
+const closeModal = document.getElementById("closeModal");
+
+document.querySelectorAll(".galeria-grid img").forEach(img => {
+  img.addEventListener("click", () => {
+    modal.style.display = "block";
+    modalImg.src = img.src;
+  });
+});
+
+if (closeModal) {
+  closeModal.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+}
+
+// Cerrar modal al hacer clic fuera de la imagen
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+});

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lumvian — Versión Moderna</title>
+  <!-- Google Fonts Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="modern-header">
+    <div class="brand">
+      <h1>Lumvian</h1>
+      <p class="subtitle">Explora cómo funciona un puente levadizo</p>
+    </div>
+    <button class="hamburger" id="menuBtn" aria-label="Abrir menú">☰</button>
+  </header>
+
+  <nav class="modern-nav" id="modernNav">
+    <a href="#descripcion">Descripción</a>
+    <a href="#objetivos">Objetivos</a>
+    <a href="#publico">Público</a>
+    <a href="#caracteristicas">Características</a>
+    <a href="#tecnologias">Tecnologías</a>
+    <a href="#diseno">Diseño UI</a>
+    <a href="#referencias">Referencias</a>
+  </nav>
+
+  <main class="wrap">
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h2>Aprende visualmente sobre puentes levadizos</h2>
+        <p>Interactividad, animaciones y explicaciones sencillas pensadas para estudiantes y docentes.</p>
+      </div>
+      <div class="hero-visual">
+        <div class="bridge-container">
+          <div class="bridge-base"></div>
+          <div class="bridge-arm" id="bridgeArm"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="descripcion" class="panel">
+      <h2>Descripción del Proyecto</h2>
+      <p>El proyecto consiste en la creación de una página web interactiva que exponga, de manera clara y visual, el funcionamiento de un puente levadizo. A través de ilustraciones, animaciones y explicaciones textuales, el sitio busca fomentar el aprendizaje y la curiosidad de los usuarios.</p>
+    </section>
+
+    <section id="objetivos" class="panel">
+      <h2>Objetivos</h2>
+      <p><strong>General:</strong> Diseñar e implementar una página web interactiva que explique el funcionamiento de un puente levadizo, sus características y su importancia, con fines educativos y de divulgación.</p>
+      <h3>Específicos</h3>
+      <ul>
+        <li>Diseñar una interfaz web atractiva y accesible.</li>
+        <li>Implementar secciones informativas sobre historia, partes y funcionamiento.</li>
+        <li>Crear animaciones del mecanismo de elevación.</li>
+        <li>Integrar ejemplos de puentes levadizos reconocidos.</li>
+        <li>Evaluar la usabilidad mediante pruebas.</li>
+      </ul>
+    </section>
+
+    <section id="publico" class="panel">
+      <h2>Público Objetivo</h2>
+      <p>Dirigido a estudiantes, docentes y público general interesado en ingeniería civil y arquitectura. Edad objetivo: 12-40 años.</p>
+    </section>
+
+    <section id="caracteristicas" class="panel">
+      <h2>Características Principales</h2>
+      <p>Lumvian combina texto, imagen y movimiento para facilitar la comprensión de procesos complejos relacionados con los puentes levadizos.</p>
+    </section>
+
+    <section id="tecnologias" class="panel">
+      <h2>Tecnologías Utilizadas</h2>
+      <p>HTML para la estructura, CSS para estilos y JavaScript para interacción y animaciones.</p>
+    </section>
+
+    <section id="diseno" class="panel">
+      <h2>Diseño de la Interfaz (UI)</h2>
+      <p>Interfaz accesible, responsiva y pensada en la experiencia del usuario. Incluye secciones explicativas y una animación interactiva del puente.</p>
+      <div class="controls">
+        <button id="toggleBridge" class="btn">Alternar puente</button>
+      </div>
+    </section>
+
+    <section id="referencias" class="panel">
+      <h2>Referencias</h2>
+      <ul>
+        <li>Admin. (2023). Puente levadizo: Definición, Diseño y Tipos. Infraestructura Vial.</li>
+        <li>MDN. HTML: Lenguaje de etiquetas de hipertexto.</li>
+        <li>Equipo editorial, Etecé. (2025). Página web - Qué es, elementos, usos y tipos.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="modern-footer">
+    <p>Diana Valentina Valderrama Erazo | Juan David Mateo Ortiz Rodriguez - CUN — © 2025</p>
+  </footer>
+
+  <button id="scrollToTopBtn" class="toTop" title="Volver arriba">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

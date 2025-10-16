@@ -1,166 +1,245 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Lumvian</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="modern-header">
-      <div class="brand">
-        <h1>Lumvian</h1>
-        <p class="subtitle">Explora cómo funciona un puente levadizo</p>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lumvian</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="modern-header">
+    <div class="brand">
+      <h1>Lumvian</h1>
+      <p class="subtitle">Explora cómo funciona un puente levadizo</p>
+    </div>
+    <button class="hamburger" id="menuBtn" aria-label="Abrir menú">☰</button>
+  </header>
+
+  <nav class="modern-nav" id="modernNav">
+    <a href="#Introduccion">Introducción</a>
+    <a href="#historia">Historia</a>
+    <a href="#principio_de_funcionamiento">Principio de Funcionamiento</a>
+    <a href="#tipos_de_puentes">Tipos de Puentes</a>
+    <a href="#materiales_y_construccion">Materiales y Construcción</a>
+    <a href="#tecnologia_y_automatizacion">Tecnología y Automatización</a>
+    <a href="#referencias">Referencias</a>
+  </nav>
+
+  <main class="wrap">
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h2>Aprende visualmente sobre puentes levadizos</h2>
+        <p>
+          En esta página podemos ver todo lo relacionado con los puentes
+          levadizos, su historia, tipos, materiales y tecnología.
+        </p>
       </div>
-      <button class="hamburger" id="menuBtn" aria-label="Abrir menú">☰</button>
-    </header>
-
-    <nav class="modern-nav" id="modernNav">
-      <a href="#descripcion">Descripción</a>
-      <a href="#objetivos">Objetivos</a>
-      <a href="#publico">Público</a>
-      <a href="#caracteristicas">Características</a>
-      <a href="#tecnologias">Tecnologías</a>
-      <a href="#diseno">Diseño UI</a>
-      <a href="#referencias">Referencias</a>
-    </nav>
-
-    <main class="wrap">
-      <section id="hero" class="hero">
-        <div class="hero-content">
-          <h2>Aprende visualmente sobre puentes levadizos</h2>
-          <p>
-            Interactividad, animaciones y explicaciones sencillas pensadas para
-            estudiantes y docentes.
-          </p>
+      <div class="hero-visual">
+        <div class="bridge-container">
+          <div class="bridge-base"></div>
+          <div class="bridge-arm" id="bridgeArm"></div>
         </div>
-        <div class="hero-visual">
-          <div class="bridge-container">
-            <div class="bridge-base"></div>
-            <div class="bridge-arm" id="bridgeArm"></div>
-          </div>
-        </div>
-      </section>
-
-      <section id="descripcion" class="panel">
-        <h2>Descripción del Proyecto</h2>
-        <p>
-          El proyecto consiste en la creación de una página web interactiva que
-          exponga, de manera clara y visual, el funcionamiento de un puente
-          levadizo. A través de ilustraciones, animaciones y explicaciones
-          textuales, el sitio busca fomentar el aprendizaje y la curiosidad de
-          los usuarios.
-        </p>
-      </section>
-
-      <section id="objetivos" class="panel">
-        <h2>Objetivos</h2>
-        <p>
-          <strong>General:</strong> Diseñar e implementar una página web
-          interactiva que explique el funcionamiento de un puente levadizo, sus
-          características y su importancia, con fines educativos y de
-          divulgación.
-        </p>
-        <h3>Específicos</h3>
-        <ul>
-          <li>Diseñar una interfaz web atractiva y accesible.</li>
-          <li>
-            Implementar secciones informativas sobre historia, partes y
-            funcionamiento.
-          </li>
-          <li>Crear animaciones del mecanismo de elevación.</li>
-          <li>Integrar ejemplos de puentes levadizos reconocidos.</li>
-          <li>Evaluar la usabilidad mediante pruebas.</li>
-        </ul>
-      </section>
-
-      <section id="publico" class="panel">
-        <h2>Público Objetivo</h2>
-        <p>
-          Dirigido a estudiantes, docentes y público general interesado en
-          ingeniería civil y arquitectura. Edad objetivo: 12-40 años.
-        </p>
-      </section>
-
-      <section id="caracteristicas" class="panel">
-        <h2>Características Principales</h2>
-        <p>
-          Lumvian combina texto, imagen y movimiento para facilitar la
-          comprensión de procesos complejos relacionados con los puentes
-          levadizos.
-        </p>
-      </section>
-
-      <section id="tecnologias" class="panel">
-        <h2>Tecnologías Utilizadas</h2>
-        <p>
-          HTML para la estructura, CSS para estilos y JavaScript para
-          interacción y animaciones.
-        </p>
-      </section>
-
-      <section id="diseno" class="panel">
-        <h2>Diseño de la Interfaz (UI)</h2>
-        <p>
-          Interfaz accesible, responsiva y pensada en la experiencia del
-          usuario. Incluye secciones explicativas y una animación interactiva
-          del puente.
-        </p>
-        <div class="controls">
-          <button id="toggleBridge" class="btn">Alternar puente</button>
-        </div>
-      </section>
-
-      <section id="galeria" class="panel galeria">
-        <h2>Galería del Proyecto Lumvian</h2>
-        <div class="galeria-grid">
-          <img
-            src="img/bridge.jpg"
-            alt="Vista general del puente levadizo"
-          />
-          <img
-            src="img/levadizo.png"
-            alt="Detalle del mecanismo del puente"
-          />
-        </div>
-        <p class="hint">Haz clic sobre las imágenes para ampliarlas.</p>
-      </section>
-
-      <!-- Modal para ampliar imágenes -->
-      <div id="imgModal">
-        <span id="closeModal">&times;</span>
-        <img id="modalImage" src="" alt="Imagen ampliada" />
       </div>
+    </section>
 
-      <section id="referencias" class="panel">
-        <h2>Referencias</h2>
-        <ul>
-          <li>
-            Admin. (2023). Puente levadizo: Definición, Diseño y Tipos.
-            Infraestructura Vial.
-          </li>
-          <li>MDN. HTML: Lenguaje de etiquetas de hipertexto.</li>
-          <li>
-            Equipo editorial, Etecé. (2025). Página web - Qué es, elementos,
-            usos y tipos.
-          </li>
-        </ul>
-      </section>
-    </main>
-
-    <footer class="modern-footer">
+    <section id="Introduccion" class="panel">
+      <h2>Introducción</h2>
       <p>
-        Diana Valentina Valderrama Erazo | Juan David Mateo Ortiz Rodriguez -
-        CUN — © 2025
+        Los puentes levadizos son estructuras móviles diseñadas para permitir
+        el paso de embarcaciones al levantar una o varias secciones de su
+        plataforma. Son un ejemplo perfecto de cómo la ingeniería combina la
+        funcionalidad mecánica con la estética arquitectónica. A lo largo de
+        la historia, han sido símbolos de innovación, defensa y conectividad.
       </p>
-    </footer>
+    </section>
 
-    <button id="scrollToTopBtn" class="toTop" title="Volver arriba">↑</button>
+    <section id="historia" class="panel">
+      <h2>Historia</h2>
+      <p>
+        El concepto de los puentes levadizos se remonta a la Edad Media,
+        cuando se usaban en castillos y fortalezas para proteger el acceso
+        principal sobre fosos de agua. Estos primeros modelos eran de madera,
+        operados manualmente mediante cadenas y contrapesos. Con el avance de
+        la ingeniería, especialmente durante la Revolución Industrial, los
+        materiales cambiaron a acero y hierro forjado, y se incorporaron
+        mecanismos hidráulicos y eléctricos, lo que permitió levantar
+        estructuras más grandes y seguras. En la actualidad, los puentes
+        levadizos se utilizan tanto en puertos y canales como en ciudades
+        modernas, combinando tradición con tecnología de punta.
+      </p>
+    </section>
 
-    <script src="script.js"></script>
-  </body>
+    <section id="principio_de_funcionamiento" class="panel">
+      <h2>Principio de Funcionamiento</h2>
+      <p>
+        Un puente levadizo opera mediante un sistema de rotación o elevación
+        que permite mover su plataforma o tablero. El objetivo principal es
+        liberar espacio vertical para el paso de barcos o vehículos acuáticos
+        sin interrumpir la circulación terrestre por largos periodos. Los
+        mecanismos más comunes incluyen: Sistema de contrapesos: equilibra el
+        peso del tablero, reduciendo el esfuerzo necesario para levantarlo.
+        Motores eléctricos o hidráulicos: proporcionan la energía necesaria
+        para accionar los brazos o pistones. Sensores y control automatizado:
+        garantizan la sincronización y seguridad durante la operación. El
+        proceso puede controlarse de manera manual o automática desde una
+        torre de control.
+      </p>
+    </section>
+
+    <section id="tipos_de_puentes" class="panel">
+      <h2>Tipos de Puentes Levadizos</h2>
+      <p>
+      <section>De doble hoja: Dos secciones se levantan desde el centro hacia los
+        extremos (muy comunes en canales urbanos).
+      </section>
+      <section>De hoja simple: Solo una parte se eleva, ideal para tramos más cortos.</section>
+      <section>De contrapeso oculto: El mecanismo queda bajo la vía o dentro de torres laterales, mejorando la estética.
+      </section>
+      <section>De basculación vertical: En lugar de girar, el tablero se eleva verticalmente mediante torres y cables
+        (como los modernos puentes ferroviarios).</section>
+      </p>
+    </section>
+
+    <section id="materiales_y_construccion" class="panel">
+      <h2>Materiales y Construcción</h2>
+      <p>
+        Los materiales han evolucionado con el tiempo:
+      <section>Madera: utilizada en los primeros diseños medievales.</section><br>
+      <section>Acero estructural: ofrece resistencia y flexibilidad.</section><br>
+      <section>Hormigón armado: usado en las rampas y contrapesos.</section><br>
+      <section>Compuestos modernos: en puentes actuales, reducen el peso y mejoran la durabilidad.</section> <br>
+      </p>
+      <p>
+        La construcción requiere cálculos precisos de equilibrio, torsión y carga dinámica, combinando conocimientos de
+        mecánica, hidráulica y electrónica.
+      </p>
+    </section>
+
+    <section id="tecnologia_y_automatizacion" class="panel">
+      <h2>Tecnología y Automatización</h2>
+      <p>Los puentes modernos incorporan sistemas electrónicos de control, sensores de posición y sistemas de
+        mantenimiento predictivo que alertan sobre desgaste o fallas.
+        Gracias a la automatización industrial (PLC, SCADA), el control remoto y las operaciones seguras se han
+        convertido en el estándar actual.
+        Además, los modelos 3D y la simulación digital permiten probar la estabilidad y seguridad antes de construir la
+        estructura real.
+      <div class="controls">
+        <button id="toggleBridge" class="btn">Alternar puente</button>
+      </div>
+    </section>
+
+    <section id="galeria" class="panel galeria">
+      <h2>Galería del Proyecto Lumvian</h2>
+      <div class="carrusel">
+        <div class="carrusel-contenedor">
+          <img src="img/bridge_Chicago_River.jpg" alt="Puente de Chicago River, EE.UU." />
+          <img src="img/puente_vizcaya.jpg" alt="Puente de Vizcaya, España" />
+          <img src="img/tower_bridge.jpg" alt="Tower Bridge, Londres, Reino Unido" />
+          <img src="img/van-brienenoordbrug_bridge.jpg" alt="Van Brienenoordbrug - Rotterdam, Países Bajos">
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal para ampliar imágenes -->
+    <div id="imgModal">
+      <span id="closeModal">&times;</span>
+      <img id="modalImage" src="" alt="Imagen ampliada" />
+    </div>
+
+    <section id="referencias" class="panel">
+      <h2>Referencias</h2>
+<section id="referencias">
+  <ul>
+    <li>Wikipedia. (2024). <i>Drawbridge</i>. Recuperado de 
+      <a href="https://en.wikipedia.org/wiki/Drawbridge" target="_blank">https://en.wikipedia.org/wiki/Drawbridge</a>
+    </li>
+
+    <li>Wikipedia. (2024). <i>Bascule bridge</i>. Recuperado de 
+      <a href="https://en.wikipedia.org/wiki/Bascule_bridge" target="_blank">https://en.wikipedia.org/wiki/Bascule_bridge</a>
+    </li>
+
+    <li>Encyclopaedia Britannica. (2024). <i>Movable bridge</i>. Recuperado de 
+      <a href="https://www.britannica.com/technology/movable-bridge" target="_blank">https://www.britannica.com/technology/movable-bridge</a>
+    </li>
+
+    <li>Popov, A., & Kravtsov, V. (2023). <i>History of the development of drawbridges in the world: Overview</i>. 
+      AIP Conference Proceedings, 3428(1), 020029.  
+      Recuperado de <a href="https://pubs.aip.org/aip/acp/article/3428/1/020029/3352889" target="_blank">
+      https://pubs.aip.org/aip/acp/article/3428/1/020029/3352889</a>
+    </li>
+
+    <li>History of Bridges. (2024). <i>Movable Bridges – Types, Design and History</i>. Recuperado de 
+      <a href="https://www.historyofbridges.com/facts-about-bridges/movable-bridge" target="_blank">
+      https://www.historyofbridges.com/facts-about-bridges/movable-bridge</a>
+    </li>
+
+    <li>Encyclopedia.com. (2024). <i>Draw Bridge</i>. Recuperado de 
+      <a href="https://www.encyclopedia.com/manufacturing/news-wires-white-papers-and-books/draw-bridge" target="_blank">
+      https://www.encyclopedia.com/manufacturing/news-wires-white-papers-and-books/draw-bridge</a>
+    </li>
+
+    <li>Sahu, R., & Pradhan, S. (2017). <i>Automation of Drawbridge Model using PLC</i>. 
+      International Advanced Research Journal in Science, Engineering and Technology (IARJSET), 4(5).  
+      Recuperado de <a href="https://iarjset.com/upload/2017/may-17/IARJSET%2013.pdf" target="_blank">
+      https://iarjset.com/upload/2017/may-17/IARJSET%2013.pdf</a>
+    </li>
+
+    <li>Ismail, Z., et al. (2022). <i>Structural Monitoring of a Drawbridge in Operation: Signal Identification and Analysis Methods</i>. 
+      <i>Infrastructures</i>, 6(2), 21. MDPI.  
+      Recuperado de <a href="https://www.mdpi.com/2624-6120/6/2/21" target="_blank">
+      https://www.mdpi.com/2624-6120/6/2/21</a>
+    </li>
+
+    <li>Caprani, C., et al. (2023). <i>New technologies for bridge inspection and monitoring: A perspective from European Union research and innovation projects</i>. 
+      ResearchGate.  
+      Recuperado de <a href="https://www.researchgate.net/publication/378172110_New_technologies_for_bridge_inspection_and_monitoring_a_perspective_from_European_Union_research_and_innovation_projects" target="_blank">
+      https://www.researchgate.net/publication/378172110_New_technologies_for_bridge_inspection_and_monitoring_a_perspective_from_European_Union_research_and_innovation_projects</a>
+    </li>
+
+    <li>DPS Telecom. (2024). <i>Using Sensors and RTUs to Monitor a Drawbridge</i>. Recuperado de 
+      <a href="https://www.dpstele.com/blog/using-sensors-rtus-monitor-drawbridge.php" target="_blank">
+      https://www.dpstele.com/blog/using-sensors-rtus-monitor-drawbridge.php</a>
+    </li>
+
+    <li>Khan, M., & Li, Z. (2024). <i>An IoT-Based Road Bridge Health Monitoring and Warning System</i>. 
+      <i>Sensors</i>, 24(2), 469. MDPI.  
+      Recuperado de <a href="https://www.mdpi.com/1424-8220/24/2/469" target="_blank">
+      https://www.mdpi.com/1424-8220/24/2/469</a>
+    </li>
+
+    <li>Gibb, S., & Wang, H. (2017). <i>Development of an Autonomous Bridge Deck Inspection Robotic System</i>. 
+      <i>arXiv preprint arXiv:1704.07400</i>.  
+      Recuperado de <a href="https://arxiv.org/abs/1704.07400" target="_blank">https://arxiv.org/abs/1704.07400</a>
+    </li>
+
+    <li>Lin, Q., & Chen, T. (2017). <i>Automated Robotic Monitoring and Inspection of Steel Structures and Bridges</i>. 
+      <i>arXiv preprint arXiv:1705.04888</i>.  
+      Recuperado de <a href="https://arxiv.org/abs/1705.04888" target="_blank">https://arxiv.org/abs/1705.04888</a>
+    </li>
+
+    <li>Zhang, J., et al. (2017). <i>Autonomous Robotic System using Non-Destructive Evaluation Methods for Bridge Deck Inspection</i>. 
+      <i>arXiv preprint arXiv:1704.04663</i>.  
+      Recuperado de <a href="https://arxiv.org/abs/1704.04663" target="_blank">https://arxiv.org/abs/1704.04663</a>
+    </li>
+  </ul>
+</section>
+
+    </section>
+  </main>
+
+  <footer class="modern-footer">
+    <p>
+      Diana Valentina Valderrama Erazo | Juan David Mateo Ortiz Rodriguez -
+      CUN — © 2025
+    </p>
+  </footer>
+
+  <button id="scrollToTopBtn" class="toTop" title="Volver arriba">↑</button>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

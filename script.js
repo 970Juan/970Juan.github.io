@@ -60,3 +60,17 @@ window.addEventListener("click", (e) => {
     modal.style.display = "none";
   }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  let index = 0;
+  const contenedor = document.querySelector('.carrusel-contenedor');
+  const imagenes = document.querySelectorAll('.carrusel-contenedor img');
+  const total = imagenes.length;
+
+  function moverCarrusel() {
+    index = (index + 1) % total;
+    contenedor.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  setInterval(moverCarrusel, 3000); // cada 3 segundos
+});
